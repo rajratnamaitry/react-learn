@@ -6,6 +6,7 @@ import LifeCycleA from './components/LifeCycle/lifeCycleA'
 import Fragment from './components/fragment'
 import PureComp from './components/PureComp/pureComp'
 import ParentComp from './components/PureComp/parentComp'
+import RefEleCom from './components/RefEl/refEleCom'
 export default function App() {
   console.log('app')
   return (
@@ -15,7 +16,8 @@ export default function App() {
       {/* <MethodAsProps></MethodAsProps> */}
       {/* <LifeCycleA/> */}
       {/* <Fragment></Fragment> */}
-      <ParentComp/>
+      {/* <ParentComp/> */}
+      <RefEleCom ></RefEleCom>
       <div> App </div>
     </div>
   )
