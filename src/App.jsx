@@ -8,6 +8,7 @@ import PureComp from './components/PureComp/pureComp'
 import ParentComp from './components/PureComp/parentComp'
 import RefEleCom from './components/RefEl/refEleCom'
 import FocusInput from './components/RefEl/focusInput'
+import ParentFwdRef from './components/RefEl/ParentFwdRef'
 export default function App() {
   console.log('app')
   return (
@@ -19,7 +20,8 @@ export default function App() {
       {/* <Fragment></Fragment> */}
       {/* <ParentComp/> */}
       {/* <RefEleCom ></RefEleCom> */}
-      <FocusInput></FocusInput>
+      {/* <FocusInput></FocusInput> */}
+      <ParentFwdRef></ParentFwdRef>
       <div> App </div>
     </div>
   )
