@@ -4,6 +4,8 @@ import ErrorBindClass from './components/errorBindingClass'
 import MethodAsProps from './components/methodAsProps'
 import LifeCycleA from './components/lifeCycleA'
 import Fragment from './components/fragment'
+import PureComp from './components/PureComp/pureComp'
+import ParentComp from './components/PureComp/parentComp'
 function App() {
   return (
     <div className="App">
@@ -11,7 +13,8 @@ function App() {
       {/* <ErrorBindClass name="error"></ErrorBindClass> */}
       {/* <MethodAsProps></MethodAsProps> */}
       {/* <LifeCycleA/> */}
-      <Fragment></Fragment>
+      {/* <Fragment></Fragment> */}
+      <ParentComp/>
     </div>
   )
 }
