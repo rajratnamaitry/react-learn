@@ -6,7 +6,8 @@ import LifeCycleA from './components/LifeCycle/lifeCycleA'
 import Fragment from './components/fragment'
 import PureComp from './components/PureComp/pureComp'
 import ParentComp from './components/PureComp/parentComp'
-function App() {
+export default function App() {
+  console.log('app')
   return (
     <div className="App">
       {/* <MessageClass name="raj"></MessageClass> */}
@@ -15,8 +16,7 @@ function App() {
       {/* <LifeCycleA/> */}
       {/* <Fragment></Fragment> */}
       <ParentComp/>
+      <div> App </div>
     </div>
   )
 }
-
-export default App
