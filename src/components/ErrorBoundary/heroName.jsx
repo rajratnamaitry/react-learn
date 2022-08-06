@@ -5,6 +5,6 @@ export default function HeroName({name}) {
         throw new Error('not hero');
     }
   return (
-    <div>HeroName {name}</div>
+    <div>Hero Name is {name}</div>
   )
 }
