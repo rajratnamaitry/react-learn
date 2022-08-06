@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 /** 
- * error binding 
+ * event binding 
  *  with call back fun
  * */ 
-export default class ErrorBindClass extends Component {
+export default class EventBindClass extends Component {
     constructor() {
         super()
         this.state = {
