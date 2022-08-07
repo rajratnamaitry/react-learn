@@ -1,25 +1,26 @@
-import './App.css'
-import MessageClass from './components/MessageClass'
-import EventBindClass from './components/EventBindingClass'
-import MethodAsProps from './components/MethodAsProps/MethodAsProps'
-import LifeCycleA from './components/LifeCycle/LifeCycleA'
-import Fragment from './components/Fragment'
-import PureComp from './components/PureComp/PureComp'
-import ParentComp from './components/PureComp/ParentComp'
-import RefEleCom from './components/RefEl/RefEleCom'
-import FocusInput from './components/RefEl/FocusInput'
-import ParentFwdRef from './components/RefEl/ParentFwdRef'
-import Portal from './components/Portal/Portal'
-import HeroName from './components/ErrorBoundary/HeroName'
-import ErrorBoundaryClass from './components/ErrorBoundary/ErrorBoundaryClass'
-import ClickCounter from './components/HighOrderComp/ClickCounter'
-import HoverCounter from './components/HighOrderComp/HoverCounter'
+import "./App.css";
+import MessageClass from "./components/MessageClass";
+import EventBindClass from "./components/EventBindingClass";
+import MethodAsProps from "./components/MethodAsProps/MethodAsProps";
+import LifeCycleA from "./components/LifeCycle/LifeCycleA";
+import Fragment from "./components/Fragment";
+import PureComp from "./components/PureComp/PureComp";
+import ParentComp from "./components/PureComp/ParentComp";
+import RefEleCom from "./components/RefEl/RefEleCom";
+import FocusInput from "./components/RefEl/FocusInput";
+import ParentFwdRef from "./components/RefEl/ParentFwdRef";
+import Portal from "./components/Portal/Portal";
+import HeroName from "./components/ErrorBoundary/HeroName";
+import ErrorBoundaryClass from "./components/ErrorBoundary/ErrorBoundaryClass";
+import ClickCounter from "./components/HighOrderComp/ClickCounter";
+import HoverCounter from "./components/HighOrderComp/HoverCounter";
+import Counter from "./components/RenderProps/Counter";
 /**
  *  application starting point
  * @returns HTML
  */
 export default function App() {
-  console.log('app')
+  console.log("app");
   return (
     <div className="App">
       {/* <MessageClass name="raj"></MessageClass> */}
@@ -37,9 +38,19 @@ export default function App() {
         <HeroName name={'Batman'}/>
         // <HeroName name={'joker'}/>
       </ErrorBoundaryClass> */}
-      <ClickCounter name="app comp" ></ClickCounter>
-      <HoverCounter></HoverCounter>
+      {/* HOC
+        <ClickCounter name="HOC app comp" ></ClickCounter>
+        <HoverCounter></HoverCounter> 
+      */}
+      {/* 
+      Render props
+      <Counter render={(counter, incrementCounter) => {
+          return (<ClickCounter counter={counter} incrementCounter={incrementCounter} name="Render props app click name " />);
+        }} />
+      <Counter render={(counter, incrementCounter) => {
+          return (<HoverCounter counter={counter} incrementCounter={incrementCounter} name="Render props app Hover name" />);
+        }} /> */}
       <div> App </div>
     </div>
-  )
+  );
 }
