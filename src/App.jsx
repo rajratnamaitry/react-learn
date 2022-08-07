@@ -13,6 +13,7 @@ import Portal from './components/Portal/Portal'
 import HeroName from './components/ErrorBoundary/HeroName'
 import ErrorBoundaryClass from './components/ErrorBoundary/ErrorBoundaryClass'
 import ClickCounter from './components/HighOrderComp/ClickCounter'
+import HoverCounter from './components/HighOrderComp/HoverCounter'
 /**
  *  application starting point
  * @returns HTML
@@ -36,7 +37,8 @@ export default function App() {
         <HeroName name={'Batman'}/>
         // <HeroName name={'joker'}/>
       </ErrorBoundaryClass> */}
-      <ClickCounter></ClickCounter>
+      <ClickCounter name="app comp" ></ClickCounter>
+      <HoverCounter></HoverCounter>
       <div> App </div>
     </div>
   )
