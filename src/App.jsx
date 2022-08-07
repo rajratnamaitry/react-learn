@@ -15,6 +15,8 @@ import ErrorBoundaryClass from "./components/ErrorBoundary/ErrorBoundaryClass";
 import ClickCounter from "./components/HighOrderComp/ClickCounter";
 import HoverCounter from "./components/HighOrderComp/HoverCounter";
 import Counter from "./components/RenderProps/Counter";
+import CompB from "./components/Context/CompB";
+import { UserProvider } from "./components/Context/userContext";
 /**
  *  application starting point
  * @returns HTML
@@ -50,6 +52,9 @@ export default function App() {
       <Counter render={(counter, incrementCounter) => {
           return (<HoverCounter counter={counter} incrementCounter={incrementCounter} name="Render props app Hover name" />);
         }} /> */}
+        <UserProvider value="context app">
+          <CompB></CompB>
+        </UserProvider>
       <div> App </div>
     </div>
   );
