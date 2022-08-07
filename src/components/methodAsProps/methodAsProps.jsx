@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ChildMethodAsProps from './childMethodAsProps';
+import ChildMethodAsProps from './ChildMethodAsProps';
 /**
  *  method pass as props
  *  @output decorator

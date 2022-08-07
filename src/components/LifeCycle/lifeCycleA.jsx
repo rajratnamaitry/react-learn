@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import LifeCycleB from './lifeCycleB';
+import LifeCycleB from './LifeCycleB';
 
 export default class LifeCycleA extends Component {
     constructor(props) {

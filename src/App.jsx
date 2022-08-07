@@ -1,17 +1,18 @@
 import './App.css'
-import MessageClass from './components/messageClass'
-import EventBindClass from './components/eventBindingClass'
-import MethodAsProps from './components/methodAsProps/methodAsProps'
-import LifeCycleA from './components/LifeCycle/lifeCycleA'
-import Fragment from './components/fragment'
-import PureComp from './components/PureComp/pureComp'
-import ParentComp from './components/PureComp/parentComp'
-import RefEleCom from './components/RefEl/refEleCom'
-import FocusInput from './components/RefEl/focusInput'
+import MessageClass from './components/MessageClass'
+import EventBindClass from './components/EventBindingClass'
+import MethodAsProps from './components/MethodAsProps/MethodAsProps'
+import LifeCycleA from './components/LifeCycle/LifeCycleA'
+import Fragment from './components/Fragment'
+import PureComp from './components/PureComp/PureComp'
+import ParentComp from './components/PureComp/ParentComp'
+import RefEleCom from './components/RefEl/RefEleCom'
+import FocusInput from './components/RefEl/FocusInput'
 import ParentFwdRef from './components/RefEl/ParentFwdRef'
-import Portal from './components/portal/portal'
-import HeroName from './components/ErrorBoundary/heroName'
+import Portal from './components/Portal/Portal'
+import HeroName from './components/ErrorBoundary/HeroName'
 import ErrorBoundaryClass from './components/ErrorBoundary/ErrorBoundaryClass'
+import ClickCounter from './components/HighOrderComp/ClickCounter'
 /**
  *  application starting point
  * @returns HTML
@@ -35,6 +36,7 @@ export default function App() {
         <HeroName name={'Batman'}/>
         // <HeroName name={'joker'}/>
       </ErrorBoundaryClass> */}
+      <ClickCounter></ClickCounter>
       <div> App </div>
     </div>
   )

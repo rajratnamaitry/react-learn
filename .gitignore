@@ -27,3 +27,4 @@ firebase.js
 docs/
 out/
 package-lock.json
+.docz

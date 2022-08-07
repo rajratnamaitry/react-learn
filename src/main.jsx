@@ -8,3 +8,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
   </React.StrictMode>
 )
+ /**
+ *  React v18
+    import ReactDOM from 'react-dom'
+    const rootNode = document.getElementById('root');
+    ReactDOM.render(<App />, rootNode);
+ */

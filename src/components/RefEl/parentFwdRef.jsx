@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import FrwdInpuRef from './frwdInpuRef'
+import FrwdInpuRef from './FrwdInpuRef'
 
 export default class ParentFwdRef extends Component {
   constructor(props) {
