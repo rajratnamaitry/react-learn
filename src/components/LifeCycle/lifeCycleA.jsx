@@ -7,7 +7,7 @@ export default class LifeCycleA extends Component {
         this.state = {
             name: 'raj'
         }
-        console.log('A','con')
+        console.log('A','constructor')
     }
     static getDerivedStateFromProps(props, state) {
         console.log('A','getDerivedStateFromProps')

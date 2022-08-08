@@ -6,8 +6,6 @@
     * Can pass Argu to UpdateComponent
     * Always Pass {...this.props}
 
-
-
 ```JSX
 const WithCounter = (WrapperComp, IncrementNumber = 1)=>{
     class NewComp extends Component {

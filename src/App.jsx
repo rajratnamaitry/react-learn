@@ -1,6 +1,6 @@
 import "./App.css";
 import MessageClass from "./components/State/MessageClass";
-import EventBindClass from "./components/EventBindingClass";
+import EventBindClass from "./components/EventBinding/EventBindingClass";
 import MethodAsProps from "./components/MethodAsProps/MethodAsProps";
 import LifeCycleA from "./components/LifeCycle/LifeCycleA";
 import Fragment from "./components/Fragment";
@@ -35,26 +35,32 @@ export default function App() {
       {/* <FocusInput></FocusInput> */}
       {/* <ParentFwdRef></ParentFwdRef> */}
       {/* <Portal/> */}
-      {/* <ErrorBoundaryClass>
-        <HeroName name={'Superman'}/>
-        <HeroName name={'Batman'}/>
-        // <HeroName name={'joker'}/>
-      </ErrorBoundaryClass> */}
-      {/* HOC
+      {/* 
+        <ErrorBoundaryClass>
+          <HeroName name={'Superman'}/>
+          <HeroName name={'Batman'}/>
+          // <HeroName name={'joker'}/>
+        </ErrorBoundaryClass> 
+      */}
+      {/* 
+        // HOC
         <ClickCounter name="HOC app comp" ></ClickCounter>
         <HoverCounter></HoverCounter> 
       */}
       {/* 
-      Render props
-      <Counter render={(counter, incrementCounter) => {
-          return (<ClickCounter counter={counter} incrementCounter={incrementCounter} name="Render props app click name " />);
-        }} />
-      <Counter render={(counter, incrementCounter) => {
-          return (<HoverCounter counter={counter} incrementCounter={incrementCounter} name="Render props app Hover name" />);
-        }} /> */}
+        Render props
+        <Counter render={(counter, incrementCounter) => {
+            return (<ClickCounter counter={counter} incrementCounter={incrementCounter} name="Render props app click name " />);
+          }} />
+        <Counter render={(counter, incrementCounter) => {
+            return (<HoverCounter counter={counter} incrementCounter={incrementCounter} name="Render props app Hover name" />);
+          }} /> 
+      */}
+      {/* 
         <UserProvider value="context app">
           <CompB></CompB>
-        </UserProvider>
+        </UserProvider> 
+      */}
       <div> App </div>
     </div>
   );
