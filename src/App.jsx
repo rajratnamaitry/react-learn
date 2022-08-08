@@ -1,5 +1,5 @@
 import "./App.css";
-import MessageClass from "./components/MessageClass";
+import MessageClass from "./components/State/MessageClass";
 import EventBindClass from "./components/EventBindingClass";
 import MethodAsProps from "./components/MethodAsProps/MethodAsProps";
 import LifeCycleA from "./components/LifeCycle/LifeCycleA";
