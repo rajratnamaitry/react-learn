@@ -2,7 +2,7 @@
 - [Class Components State](src/components/State/Readme.md)
 - Function Components
 - Fragment
-- [Portal](src/components/Portal/Readme.md)
+- [Portal](src/components/ReactPortal/Readme.md)
 - [Pure Components](src/components/PureComp/Readme.md)
 - Method As Props
 - [Life Cycle](src/components/LifeCycle/Readme.md)
