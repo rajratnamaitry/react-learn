@@ -1,7 +1,8 @@
 # Pure component 
     A pure Comp implements shouldComponentUpdate with a shallow prop and state comparison
-    * Use all Children pure comp to avoid unexpted  behaviour
-    * Never mutate the state. Always return a new Object.
+    
+* Use all Children pure comp to avoid unexpted  behaviour
+* Never mutate the state. Always return a new Object.
     SC of prevState with currentState
     SC of prevProps with currentProps
 
