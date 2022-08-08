@@ -3,6 +3,7 @@ import ChildMethodAsProps from './ChildMethodAsProps';
 /**
  *  method pass as props
  *  @output decorator
+ * 
  */
 export default class MethodAsProps extends Component {
     constructor() {
