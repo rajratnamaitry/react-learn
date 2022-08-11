@@ -52,11 +52,11 @@ export default function Basics() {
             return (<HoverCounter counter={counter} incrementCounter={incrementCounter} name="Render props app Hover name" />);
           }} /> 
       */}
-      {/* 
+      
         <UserProvider value="context app">
           <CompB></CompB>
         </UserProvider> 
-      */}
+     
     </div>
   );
 }

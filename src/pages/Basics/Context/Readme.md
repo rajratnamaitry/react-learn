@@ -17,6 +17,9 @@
 
     // App.jsx
     // If Provide not used then default value will used 'Init value'
+    // value="context app" will receive in nasted comp 
+    // Comp C `this.context` context app
+
     <UserProvider value="context app">
         <CompB></CompB>
     </UserProvider>

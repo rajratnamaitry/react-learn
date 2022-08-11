@@ -6,7 +6,7 @@ export default class CompC extends Component {
   render() {
     return (
       <div>
-        Comp C  {this.context}
+        Comp C `this.context`  {this.context}
         <CompD /> 
       </div>
     )
