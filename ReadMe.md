@@ -1,16 +1,19 @@
 ## React Learning
-- [Class Components State](src/components/State/Readme.md)
+- [Class Components State](src/pages/Basics/State/Readme.md)
 - Function Components
 - Fragment
-- [Ref](src/components/RefEl/Readme.md)
-- [Portal](src/components/ReactPortal/Readme.md)
-- [Pure Components](src/components/PureComp/Readme.md)
-- [Method As Props](src/components/PassMethodAsProps/Readme.md)
-- [Life Cycle](src/components/LifeCycle/Readme.md)
-- [Error Boundary](src/components/ErrorBoundary/Readme.md)
-- [Event Bind Class](src/components/EventBinding/Readme.md)
-- [Higher Order Components (HOC)](src/components/HighOrderComp/Readme.md)
-- [Render Props](src/components/RenderProps/Readme.md) 
+- [Ref](src/pages/Basics/RefEl/Readme.md)
+- [Portal](src/pages/Basics/ReactPortal/Readme.md)
+- [Pure Components](src/pages/Basics/PureComp/Readme.md)
+- [Method As Props](src/pages/Basics/PassMethodAsProps/Readme.md)
+- [Life Cycle](src/pages/Basics/LifeCycle/Readme.md)
+- [Error Boundary](src/pages/Basics/ErrorBoundary/Readme.md)
+- [Event Bind Class](src/pages/Basics/EventBinding/Readme.md)
+- [Higher Order Components (HOC)](src/pages/Basics/HighOrderComp/Readme.md)
+- [Render Props](src/pages/Basics/RenderProps/Readme.md) 
 
 ## React Hooks
-- userState
+- [userState](src/pages/Hooks/State)
+- [useEffect](src/pages/Hooks/Effect/Readme.md)
+- [useContext](src/pages/Hooks/Context/Readme.md)
+- useReducer
