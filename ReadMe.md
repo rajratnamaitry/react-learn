@@ -11,6 +11,7 @@
 - [Event Bind Class](src/pages/Basics/EventBinding/Readme.md)
 - [Higher Order Components (HOC)](src/pages/Basics/HighOrderComp/Readme.md)
 - [Render Props](src/pages/Basics/RenderProps/Readme.md) 
+- [Context](src/pages/Basics/Context/Readme.md) 
 
 ## React Hooks
 - [userState](src/pages/Hooks/State)

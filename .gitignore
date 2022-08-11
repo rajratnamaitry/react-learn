@@ -24,7 +24,6 @@ dist-ssr
 *.sw?
 
 firebase.js
-docs/
 out/
 package-lock.json
 .docz
