@@ -1,13 +1,12 @@
 # React Hooks
-* Only Call Hooks at the top level
-   Don't call Hooks inside loops,conditions, or nested Functions
-* Only Call Hooks from React Functions
-* Call them from within React functional components and not just any regular javascript function
+- Only Call Hooks at the top level and from React Functions
+- Don't call Hooks inside loops,conditions, or nested Functions
+- Call them from within React functional components and not just any regular javascript function
 
-- [Use State](#use-state)
-- [Use Effect](#use-effect)
-- [use Context](#use-context)
-- useReducer
+    - [Use State](#use-state)
+    - [Use Effect](#use-effect)
+    - [use Context](#use-context)
+    - useReducer
 ## Use State
 ## Use Effect
 * The Effect Hook lets you perform side effects in functional components

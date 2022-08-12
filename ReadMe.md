@@ -1,6 +1,7 @@
 # React Learning
-- [Basics](src/pages/Basics/Readme.md)
-- [Hooks](src/pages/Hooks/Readme.md)
+React Topics and Example with points
+    - [Basics](topics/basics.md)
+    - [Hooks](topics/hooks.md)
 
 ## Run locally
 ```cmd

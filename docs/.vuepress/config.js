@@ -2,6 +2,9 @@ module.exports = {
     title: 'React learning',
     description: 'Just playing around',
     themeConfig: {
+        nextLinks: true,
+        prevLinks: true,
+        docsRepo: 'rajratnamaitry/react-learn',
         repo: 'rajratnamaitry/react-learn',
         docsDir: 'docs',
         smoothScroll: true,

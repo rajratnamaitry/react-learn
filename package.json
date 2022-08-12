@@ -5,7 +5,6 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "docs": "docsify serve docs",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "preview": "vite preview"
