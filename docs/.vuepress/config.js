@@ -1,6 +1,7 @@
 module.exports = {
     title: 'React learning',
     description: 'Just playing around',
+    base: '/react-learn/',
     themeConfig: {
         nextLinks: true,
         prevLinks: true,
