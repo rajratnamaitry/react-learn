@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>React Hooks | React learning</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/assets/css/0.styles.8f93fd0e.css" as="style"><link rel="preload" href="/assets/js/app.6623667f.js" as="script"><link rel="preload" href="/assets/js/2.d6423652.js" as="script"><link rel="preload" href="/assets/js/9.48a44d13.js" as="script"><link rel="prefetch" href="/assets/js/3.227b66df.js"><link rel="prefetch" href="/assets/js/4.1aec1ace.js"><link rel="prefetch" href="/assets/js/5.b9513656.js"><link rel="prefetch" href="/assets/js/6.1fee5ff0.js"><link rel="prefetch" href="/assets/js/7.bd7dd450.js"><link rel="prefetch" href="/assets/js/8.bf8d0ae8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8f93fd0e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">React learning</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/topics/basics.html" class="nav-link">
+  Basics
+</a></div><div class="nav-item"><a href="/topics/hooks.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Hooks
+</a></div> <a href="https://github.com/rajratnamaitry/react-learn" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/topics/basics.html" class="nav-link">
+  Basics
+</a></div><div class="nav-item"><a href="/topics/hooks.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Hooks
+</a></div> <a href="https://github.com/rajratnamaitry/react-learn" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>React Hooks</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/topics/hooks.html#use-state" class="sidebar-link">Use State</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/topics/hooks.html#use-effect" class="sidebar-link">Use Effect</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/topics/hooks.html#_1-render-every-times" class="sidebar-link">1. Render every times</a></li><li class="sidebar-sub-header"><a href="/topics/hooks.html#_2-render-conditions" class="sidebar-link">2. Render conditions</a></li><li class="sidebar-sub-header"><a href="/topics/hooks.html#_3-render-once" class="sidebar-link">3. Render Once</a></li><li class="sidebar-sub-header"><a href="/topics/hooks.html#_4-unmount-component" class="sidebar-link">4. UnMount component</a></li></ul></li><li><a href="/topics/hooks.html#use-context" class="sidebar-link">Use Context</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="react-hooks"><a href="#react-hooks" class="header-anchor">#</a> React Hooks</h1> <ul><li><p>Only Call Hooks at the top level and from React Functions</p></li> <li><p>Don't call Hooks inside loops,conditions, or nested Functions</p></li> <li><p>Call them from within React functional components and not just any regular javascript function</p> <ul><li><a href="#use-state">Use State</a></li> <li><a href="#use-effect">Use Effect</a></li> <li><a href="#use-context">use Context</a></li> <li>useReducer</li></ul></li></ul> <h2 id="use-state"><a href="#use-state" class="header-anchor">#</a> Use State</h2> <h2 id="use-effect"><a href="#use-effect" class="header-anchor">#</a> Use Effect</h2> <ul><li>The Effect Hook lets you perform side effects in functional components</li> <li>It is a close replacement for componentDidMount, componentDidUpdate and componentWillUnmount</li></ul> <ol><li><a href="#1-render-every-times">Render every times</a></li> <li><a href="#2-conditional-run-effect-and-2nd-argu">Render conditions</a></li> <li><a href="#3-render-once">Render once</a></li> <li><a href="#4-unmount-component">UnMount component</a></li></ol> <h3 id="_1-render-every-times"><a href="#_1-render-every-times" class="header-anchor">#</a> 1. Render every times</h3> <p>Every time render useEffect executed</p> <div class="language-JSX extra-class"><pre class="language-jsx"><code><span class="token comment">// useEffect.jsx </span>
+<span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;useEffect&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   document<span class="token punctuation">.</span>title <span class="token operator">=</span> <span class="token string">&quot;Count &quot;</span> <span class="token operator">+</span> count<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// Every time render console.log prints</span>
+</code></pre></div><h3 id="_2-render-conditions"><a href="#_2-render-conditions" class="header-anchor">#</a> 2. Render conditions</h3> <p>Conditional Run Effect and arguments</p> <div class="language-JSX extra-class"><pre class="language-jsx"><code><span class="token comment">// useEffectConditional.jsx</span>
+<span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;useEffect&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   document<span class="token punctuation">.</span>title <span class="token operator">=</span> <span class="token string">&quot;Count &quot;</span> <span class="token operator">+</span> count<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">[</span>count<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// if count change then  console.log prints</span>
+</code></pre></div><h3 id="_3-render-once"><a href="#_3-render-once" class="header-anchor">#</a> 3. Render Once</h3> <div class="language-JSX extra-class"><pre class="language-jsx"><code><span class="token comment">// useEffectOnce.jsx</span>
+<span class="token keyword">const</span> <span class="token function-variable function">logMouse</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'logMouse fn'</span><span class="token punctuation">)</span>
+   <span class="token function">setX</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>clientX<span class="token punctuation">)</span>
+   <span class="token function">setY</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>clientY<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'useEffect fn'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   document<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'mousemove'</span><span class="token punctuation">,</span>logMouse<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token comment">// Ex. Fetch Data on id change </span>
+<span class="token comment">// Output</span>
+<span class="token comment">// useEffect fn</span>
+<span class="token comment">// (207) logMouse fn</span>
+</code></pre></div><h3 id="_4-unmount-component"><a href="#_4-unmount-component" class="header-anchor">#</a> 4. UnMount component</h3> <div class="language-JSX extra-class"><pre class="language-jsx"><code><span class="token comment">// useEffectCleanUp.jsx</span>
+<span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'useEffect fn'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   document<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'mousemove'</span><span class="token punctuation">,</span>logMouse<span class="token punctuation">)</span>
+   <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'useEffect unmount'</span><span class="token punctuation">)</span>
+      document<span class="token punctuation">.</span><span class="token function">removeEventListener</span><span class="token punctuation">(</span><span class="token string">'mousemove'</span><span class="token punctuation">,</span>logMouse<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token comment">// Output</span>
+<span class="token comment">// useEffect unmount </span>
+</code></pre></div><h2 id="use-context"><a href="#use-context" class="header-anchor">#</a> Use Context</h2> <p>Context provids a way to pass data through the component tree without
+having to pass props down manually at every level.</p> <ul><li>Create Context</li> <li>Provide Context</li> <li>Consume Context</li></ul> <div class="language-JSX extra-class"><pre class="language-jsx"><code><span class="token keyword">export</span> <span class="token keyword">const</span> UserContext <span class="token operator">=</span> React<span class="token punctuation">.</span><span class="token function">createContext</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> UserChannelContext <span class="token operator">=</span> React<span class="token punctuation">.</span><span class="token function">createContext</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token comment">// Parent component</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">UserContext.Provider</span></span> <span class="token attr-name">value</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token string">'From hook index'</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">UserChannelContext.Provider</span></span> <span class="token attr-name">value</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token string">'From nasted provider hook index'</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Bcomp</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Bcomp</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">UserChannelContext.Provider</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">UserContext.Provider</span></span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">// Nasted component</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> UserContext<span class="token punctuation">,</span> UserChannelContext <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;./index&quot;</span><span class="token punctuation">;</span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">UserContext.Consumer</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+</span><span class="token punctuation">{</span>
+    <span class="token parameter">user</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">UserChannelContext.Consumer</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span>
+        <span class="token parameter">channel</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">Child receive </span><span class="token punctuation">{</span>user<span class="token punctuation">}</span><span class="token plain-text"> - </span><span class="token punctuation">{</span>channel<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">UserChannelContext.Consumer</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token plain-text">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">UserContext.Consumer</span></span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">// Alternate </span>
+<span class="token keyword">const</span> user <span class="token operator">=</span> <span class="token function">useContext</span><span class="token punctuation">(</span>UserContext<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> channel <span class="token operator">=</span> <span class="token function">useContext</span><span class="token punctuation">(</span>UserChannelContext<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token punctuation">{</span>user<span class="token punctuation">}</span><span class="token plain-text"> - </span><span class="token punctuation">{</span>channel<span class="token punctuation">}</span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.6623667f.js" defer></script><script src="/assets/js/2.d6423652.js" defer></script><script src="/assets/js/9.48a44d13.js" defer></script>
+  </body>
+</html>
