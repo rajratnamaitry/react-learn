@@ -8,15 +8,29 @@ import UseEffectOnce from "./Effect/useEffectOnce";
 import UseEffectCleanUp from "./Effect/useEffectCleanUp";
 import Bcomp from "./Context/Bcomp";
 import { UserContext, UserChannelContext } from "./Context";
+import UseReducer from "./Reducer/UseReducer";
+import UseReducerComplex from "./Reducer/UseReducerComplex";
+import WithUseContext from "./Reducer/UseContext/WithUseContext";
+import UseRef from "./UseRef/UseRefOne";
+import UseRefTwo from "./UseRef/UseRefTwo";
+import ClickCounter from "./Custom/ClickCounter";
+import ClickCounterTwo from "./Custom/ClickCounterTwo";
 export default function Hooks() {
   const [isFlag,setIsFlag] = useState(true);
   return (
     <div>
-      <UserContext.Provider value={'From hook index'}>
+      <ClickCounter></ClickCounter>
+      <ClickCounterTwo></ClickCounterTwo>
+      {/* <UseRefTwo></UseRefTwo> */}
+      {/* <UseRef></UseRef> */}
+      {/* <WithUseContext></WithUseContext> */}
+      {/* <UseReducerComplex></UseReducerComplex> */}
+      {/* <UseReducer></UseReducer> */}
+      {/* <UserContext.Provider value={'From hook index'}>
         <UserChannelContext.Provider value={'From nasted provider hook index'}>
         <Bcomp></Bcomp>
         </UserChannelContext.Provider>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
       {/* <button type="button" onClick={()=> setIsFlag(!isFlag)} >Toggle</button>
       { isFlag ? <UseEffectCleanUp></UseEffectCleanUp> : ''} */}
       {/* <UseEffectOnce></UseEffectOnce> */}
