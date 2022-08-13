@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Redux | React learning</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/react-learn/assets/css/0.styles.988d63da.css" as="style"><link rel="preload" href="/react-learn/assets/js/app.4713f331.js" as="script"><link rel="preload" href="/react-learn/assets/js/2.d6423652.js" as="script"><link rel="preload" href="/react-learn/assets/js/10.ebbf86a2.js" as="script"><link rel="prefetch" href="/react-learn/assets/js/3.1c3113f3.js"><link rel="prefetch" href="/react-learn/assets/js/4.1aec1ace.js"><link rel="prefetch" href="/react-learn/assets/js/5.b9513656.js"><link rel="prefetch" href="/react-learn/assets/js/6.1fee5ff0.js"><link rel="prefetch" href="/react-learn/assets/js/7.f3d39947.js"><link rel="prefetch" href="/react-learn/assets/js/8.6262fba5.js"><link rel="prefetch" href="/react-learn/assets/js/9.46ef9288.js">
+    <link rel="stylesheet" href="/react-learn/assets/css/0.styles.988d63da.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/react-learn/" class="home-link router-link-active"><!----> <span class="site-name">React learning</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/react-learn/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/react-learn/topics/basics.html" class="nav-link">
+  Basics
+</a></div><div class="nav-item"><a href="/react-learn/topics/hooks.html" class="nav-link">
+  Hooks
+</a></div><div class="nav-item"><a href="/react-learn/topics/redux.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Redux toolkit
+</a></div> <a href="https://github.com/rajratnamaitry/react-learn" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/react-learn/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/react-learn/topics/basics.html" class="nav-link">
+  Basics
+</a></div><div class="nav-item"><a href="/react-learn/topics/hooks.html" class="nav-link">
+  Hooks
+</a></div><div class="nav-item"><a href="/react-learn/topics/redux.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Redux toolkit
+</a></div> <a href="https://github.com/rajratnamaitry/react-learn" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Redux</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/react-learn/topics/redux.html#package-require" class="sidebar-link">package require</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/react-learn/topics/redux.html#redux-counter" class="sidebar-link">Redux Counter</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/react-learn/topics/redux.html#redux-with-fetch-api" class="sidebar-link">Redux with Fetch API</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="redux"><a href="#redux" class="header-anchor">#</a> Redux</h1> <ul><li><strong>Redux is predictable state container for &quot;javascript app&quot;</strong></li> <li><strong>Redux is not tied to React can be used for angular , vue, react.</strong></li> <li><strong>Redux stores the state of your application</strong></li></ul> <ul><li><p>Core Concepts</p> <ul><li>A store that hold the state of application</li> <li>An action that describes the changes in the state of the application</li> <li>A reducer which actually carries out the state transition depending on the action.</li></ul></li> <li><p>Three principles</p> <ol><li>The state of whole application is stored in object tree within a single store.</li> <li>The only way to change the state is to emit an action, an object describing what happened</li> <li>To specify how the state tree is transformed by actions, you write pure reducers</li></ol></li></ul> <h2 id="package-require"><a href="#package-require" class="header-anchor">#</a> package require</h2> <ul><li>react-redux</li> <li>@reduxjs/toolkit</li></ul> <h2 id="redux-counter"><a href="#redux-counter" class="header-anchor">#</a> Redux Counter</h2> <div class="language-JSX extra-class"><pre class="language-jsx"><code><span class="token comment">// main.jsx</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Provider <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;react-redux&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> store <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;./pages/Redux/store&quot;</span>
+ReactDOM<span class="token punctuation">.</span><span class="token function">createRoot</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;root&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">React.StrictMode</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Provider</span></span> <span class="token attr-name">store</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>store<span class="token punctuation">}</span></span> <span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">App</span></span> <span class="token punctuation">/&gt;</span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Provider</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">React.StrictMode</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><div class="language-JSX extra-class"><pre class="language-jsx"><code><span class="token comment">// store.jsx</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> createSlice<span class="token punctuation">,</span> configureStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;@reduxjs/toolkit&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> counterSlice <span class="token operator">=</span> <span class="token function">createSlice</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;counter&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">initialState</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">value</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">reducers</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function-variable function">reset</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      state<span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">incremental</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      state<span class="token punctuation">.</span>value <span class="token operator">+=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">decremental</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      state<span class="token punctuation">.</span>value <span class="token operator">-=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> actions <span class="token operator">=</span> counterSlice<span class="token punctuation">.</span>actions<span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">configureStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">counter</span> <span class="token operator">:</span> counterSlice<span class="token punctuation">.</span>reducer<span class="token punctuation">,</span>
+    <span class="token literal-property property">user</span>    <span class="token operator">:</span> userSlice<span class="token punctuation">.</span>reducer
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// ReduxDemo.jsx</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> useSelector <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;react-redux&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> store<span class="token punctuation">,</span> actions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;./store&quot;</span><span class="token punctuation">;</span>
+<span class="token comment">// state</span>
+<span class="token keyword">const</span> count <span class="token operator">=</span> <span class="token function">useSelector</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> state<span class="token punctuation">.</span>counter<span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>button<span class="token punctuation">&quot;</span></span> <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span>actions<span class="token punctuation">.</span><span class="token function">reset</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+  Reset
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="redux-with-fetch-api"><a href="#redux-with-fetch-api" class="header-anchor">#</a> Redux with Fetch API</h2> <div class="language-JSX extra-class"><pre class="language-jsx"><code><span class="token comment">// UserStore.jsx</span>
+<span class="token keyword">const</span> initialState <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">loading</span> <span class="token operator">:</span>   <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">list</span>   <span class="token operator">:</span>   <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">error</span>   <span class="token operator">:</span>   <span class="token string">''</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> fetchUsers <span class="token operator">=</span> <span class="token function">createAsyncThunk</span><span class="token punctuation">(</span><span class="token string">'user/fetchUsers'</span><span class="token punctuation">,</span> <span class="token keyword">async</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+    <span class="token keyword">const</span> req <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">fetch</span><span class="token punctuation">(</span><span class="token string">'https://jsonplaceholder.typicode.com/posts'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> data <span class="token operator">=</span> <span class="token keyword">await</span> req<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> data<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> userSlice <span class="token operator">=</span> <span class="token function">createSlice</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">name</span> <span class="token operator">:</span> <span class="token string">'user'</span><span class="token punctuation">,</span>
+    initialState<span class="token punctuation">,</span>
+    <span class="token function-variable function">extraReducers</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">builder</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+        builder<span class="token punctuation">.</span><span class="token function">addCase</span><span class="token punctuation">(</span>fetchUsers<span class="token punctuation">.</span>pending<span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+            state<span class="token punctuation">.</span>loading <span class="token operator">=</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        builder<span class="token punctuation">.</span><span class="token function">addCase</span><span class="token punctuation">(</span>fetchUsers<span class="token punctuation">.</span>fulfilled<span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> action</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+            state<span class="token punctuation">.</span>loading <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+            state<span class="token punctuation">.</span>list <span class="token operator">=</span>  action<span class="token punctuation">.</span>payload<span class="token punctuation">;</span>
+            state<span class="token punctuation">.</span>error <span class="token operator">=</span> <span class="token string">''</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        builder<span class="token punctuation">.</span><span class="token function">addCase</span><span class="token punctuation">(</span>fetchUsers<span class="token punctuation">.</span>rejected<span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span>action</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+            state<span class="token punctuation">.</span>loading <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+            state<span class="token punctuation">.</span>list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+            state<span class="token punctuation">.</span>error <span class="token operator">=</span> action<span class="token punctuation">.</span>error<span class="token punctuation">.</span>message
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span> 
+<span class="token keyword">export</span> <span class="token keyword">default</span> userSlice
+
+<span class="token comment">// UserView.jsx</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> useDispatch<span class="token punctuation">,</span> useSelector <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;react-redux&quot;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> fetchUsers <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./userStore'</span>
+
+<span class="token keyword">const</span> user <span class="token operator">=</span> <span class="token function">useSelector</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span> state<span class="token punctuation">.</span>user<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> dispatch <span class="token operator">=</span> <span class="token function">useDispatch</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+    <span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token function">fetchUsers</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+</code></pre></div><p><a href="#redux">Go To Top</a></p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/react-learn/assets/js/app.4713f331.js" defer></script><script src="/react-learn/assets/js/2.d6423652.js" defer></script><script src="/react-learn/assets/js/10.ebbf86a2.js" defer></script>
+  </body>
+</html>
