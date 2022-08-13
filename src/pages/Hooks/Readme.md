@@ -1,7 +1,7 @@
 # React Hooks
-- Only Call Hooks at the top level and from React Functions
+- **Only Call Hooks at the top level and from React Functions**
 - Don't call Hooks inside loops,conditions, or nested Functions
-- Call them from within React functional components and not just any regular javascript function
+- **Call them from within React functional components and not just any regular javascript function**
 
     - [Use State](#use-state)       -   State
     - [Use Effect](#use-effect)     -   Side Effect
