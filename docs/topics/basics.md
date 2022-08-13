@@ -1,4 +1,4 @@
-## Basics
+## Fundamentals of React
 - [Class Components State](#class-components-state)
 - Function Components
 - Fragment

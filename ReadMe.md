@@ -1,6 +1,6 @@
 # React Learning
 React Topics and Example with points
-    - [Basics](topics/basics.md)
+    - [Fundamentals of React](topics/basics.md)
     - [Hooks](topics/hooks.md)
 
 ## Run locally

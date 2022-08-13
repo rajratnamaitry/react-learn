@@ -12,6 +12,14 @@
     - [Use Custom](#use-custom)
 
 ## Use State
+```JSX
+// useStateObj.jsx
+const [name, setName] = useState({
+    firstName: '',
+    lastName: ''
+})
+<input  value={name.firstName} onChange={(e)=> setName({...name, firstName: e.target.value})}/>
+```
 ## Use Effect
 * The Effect Hook lets you perform side effects in functional components
 * It is a close replacement for componentDidMount, componentDidUpdate and componentWillUnmount
@@ -155,7 +163,14 @@ export default function UseReducer() {
 
 ## Use Ref
 Can be create a generic component container which can hold a mutable value similar to instance property on class component does not cause render when the data change
-
+```JSX
+// UseRefTwo.jsx
+const inputRef = useRef(null);
+useEffect(()=>{
+    inputRef.current.focus();
+},[])
+<input type="text" ref={inputRef} ></input>
+```
 ## Use Custom
 Can use as share code between component
 

@@ -3,11 +3,23 @@
 - Don't call Hooks inside loops,conditions, or nested Functions
 - Call them from within React functional components and not just any regular javascript function
 
-    - [Use State](#use-state)
-    - [Use Effect](#use-effect)
-    - [use Context](#use-context)
-    - useReducer
+    - [Use State](#use-state)       -   State
+    - [Use Effect](#use-effect)     -   Side Effect
+    - [use Context](#use-context)   -   Context API
+    - [Use Reducer]                 -   Reducers
+    - [Use Callback vs Use Memo](#use-callback-vs-use-memo)
+    - [Use Ref](#use-ref)
+    - [Use Custom](#use-custom)
+
 ## Use State
+```JSX
+// useStateObj.jsx
+const [name, setName] = useState({
+    firstName: '',
+    lastName: ''
+})
+<input  value={name.firstName} onChange={(e)=> setName({...name, firstName: e.target.value})}/>
+```
 ## Use Effect
 * The Effect Hook lets you perform side effects in functional components
 * It is a close replacement for componentDidMount, componentDidUpdate and componentWillUnmount
@@ -110,4 +122,65 @@ return (
         {user} - {channel}
     </div>
 )
+```
+## Use Reducer
+useReducer is a hooks that is used for state management
+It is an alternative to useState
+useState is built using useReducer
+
+```JSX
+const initial = 0;
+const reducer = (state,action) =>{
+    switch (action) {
+        case 'Reset':
+            return initial;
+        case 'Increment':
+            return state + 1;
+        case 'Decrement':
+            return state - 1;
+    }
+}
+export default function UseReducer() {
+    const [count,dispatch] = useReducer(reducer,initial);
+  return (
+    <div>UseReducer
+        {count}
+      <button type="button" onClick={() => dispatch('Reset')}> Reset </button>
+      <button type="button" onClick={() => dispatch('Increment')}>Increment </button>
+      <button type="button" onClick={() => dispatch('Decrement')}>Decrement </button>
+    </div>
+  )
+}
+
+```
+
+### Use Reducer with Use Context
+## Use Callback vs Use Memo
+| Use Callback | Use Memo |
+| --- | --- |
+|Caches the provided function instance itself | Invokes the provided function and Caches its result |
+|Need to cache a function use callback | Cache the result of an invoked function|
+| --- | Memo hook can be used for performance optimization |
+
+## Use Ref
+Can be create a generic component container which can hold a mutable value similar to instance property on class component does not cause render when the data change
+```JSX
+// UseRefTwo.jsx
+const inputRef = useRef(null);
+useEffect(()=>{
+    inputRef.current.focus();
+},[])
+<input type="text" ref={inputRef} ></input>
+```
+## Use Custom
+Can use as share code between component
+
+```JSX
+// Custom/CustomHooks.jsx
+const useDocTitle = (count)=>{
+    useEffect(() => {
+        document.title = `Click ${count}`;
+    }, [count]);
+}
+export default useDocTitle;
 ```
