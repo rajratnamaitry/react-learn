@@ -15,7 +15,8 @@ module.exports = {
         nav: [
           { text: 'Home', link: '/' },
           { text: 'Basics', link: '/topics/basics.html' },
-          { text: 'Hooks', link: '/topics/hooks.html' }
+          { text: 'Hooks', link: '/topics/hooks.html' },
+          { text: 'Redux toolkit', link: '/topics/redux.html' }
         ]
       }
 }
